@@ -1,0 +1,44 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@svelte-cli/core':
+        specifier: https://pkg.pr.new/sveltejs/cli/@svelte-cli/core@9dec6fc
+        version: https://pkg.pr.new/sveltejs/cli/@svelte-cli/core@9dec6fc
+    devDependencies:
+      sv:
+        specifier: https://pkg.pr.new/sveltejs/cli/sv@9dec6fc
+        version: https://pkg.pr.new/sveltejs/cli/sv@9dec6fc
+
+packages:
+
+  '@svelte-cli/ast-tooling@https://pkg.pr.new/sveltejs/cli/@svelte-cli/ast-tooling@9dec6fc':
+    resolution: {tarball: https://pkg.pr.new/sveltejs/cli/@svelte-cli/ast-tooling@9dec6fc}
+    version: 2.1.7
+
+  '@svelte-cli/core@https://pkg.pr.new/sveltejs/cli/@svelte-cli/core@9dec6fc':
+    resolution: {tarball: https://pkg.pr.new/sveltejs/cli/@svelte-cli/core@9dec6fc}
+    version: 2.10.4
+
+  sv@https://pkg.pr.new/sveltejs/cli/sv@9dec6fc:
+    resolution: {tarball: https://pkg.pr.new/sveltejs/cli/sv@9dec6fc}
+    version: 0.5.0
+    hasBin: true
+
+snapshots:
+
+  '@svelte-cli/ast-tooling@https://pkg.pr.new/sveltejs/cli/@svelte-cli/ast-tooling@9dec6fc': {}
+
+  '@svelte-cli/core@https://pkg.pr.new/sveltejs/cli/@svelte-cli/core@9dec6fc':
+    dependencies:
+      '@svelte-cli/ast-tooling': https://pkg.pr.new/sveltejs/cli/@svelte-cli/ast-tooling@9dec6fc
+
+  sv@https://pkg.pr.new/sveltejs/cli/sv@9dec6fc:
+    dependencies:
+      '@svelte-cli/core': https://pkg.pr.new/sveltejs/cli/@svelte-cli/core@9dec6fc

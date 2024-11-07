@@ -1,0 +1,27 @@
+{
+	"name": "community-adder-template",
+	"version": "0.0.0",
+	"license": "MIT",
+	"type": "module",
+	"exports": "./src/index.js",
+	"keywords": [
+		"sv-adder",
+		"sv-add",
+		"sv-integration",
+		"sv"
+	],
+	"scripts": {
+		"start": "sv add -C temp --community file:../",
+		"create-temp": "sv create temp --check-types typescript --template skeleton --no-adders --no-install"
+	},
+	"dependencies": {
+		"@svelte-cli/core": "https://pkg.pr.new/sveltejs/cli/@svelte-cli/core@9dec6fc"
+	},
+	"devDependencies": {
+		"sv": "https://pkg.pr.new/sveltejs/cli/sv@9dec6fc"
+	},
+	"files": [
+		"src",
+		"!src/**/*.test.*"
+	]
+}
